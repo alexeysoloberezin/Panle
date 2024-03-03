@@ -1,0 +1,92 @@
+// Write your overrides
+tbody{
+  position: relative;
+
+}
+.base-table {
+  &__tr {
+    position: relative;
+    transition: 0.15s;
+    width: 100%;
+
+    &:hover {
+      background-color: #E7E9F6;
+    }
+
+    &:active {
+      background-color: #B6BEE3;
+    }
+    &.active{
+      background-color: #d7d9fd;
+    }
+  }
+
+  &__td {
+    cursor: pointer;
+    min-width: 15%;
+  }
+}
+.chart-container{
+  min-height: 400px;
+}
+
+.border-focus{
+  border: 2px dashed rgb(105,108,255 ) !important;
+}
+
+.v-pagination__item{
+  min-width: 50px;
+  min-height: 50px;
+  .v-btn{
+    min-width: fit-content;
+  }
+}
+.v-theme--dark{
+  .base-table{
+    &__tr {
+      &:hover {
+        background-color: rgb(50, 50, 68);
+      }
+      &:active {
+        background-color: rgb(35,35,51);
+      }
+      &.active{
+        background-color: #20202f;
+      }
+    }
+  }
+  .dp__input{
+    border-bottom: 1px solid rgb(102, 102, 129) !important;
+    color: rgba(255, 255, 255, 0.68);
+  }
+}
+
+.dp__input{
+  border: none !important;
+  border-bottom: 1px solid #d7d7d7 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.card-visible{
+  overflow: visible !important;
+}
+.v-overlay__content .v-card-item{
+  max-height: 95vh;
+  overflow-y: auto;
+}
+
+#app .layout-wrapper.layout-nav-type-vertical .layout-navbar{
+  z-index: 0 ;
+}
+#app .dp--tp-wrap{
+  display: none;
+}
+#app .dp__cell_inner{
+  --dp-cell-padding: 2px;
+  --dp-cell-size: 30px;
+}
+.v-table__wrapper{
+  overflow-y: auto;
+}
+
